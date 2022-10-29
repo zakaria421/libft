@@ -6,7 +6,7 @@
 /*   By: zbentale <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/22 11:54:51 by zbentale          #+#    #+#             */
-/*   Updated: 2022/10/29 17:33:34 by zbentale         ###   ########.fr       */
+/*   Updated: 2022/10/29 20:07:43 by zbentale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,14 +40,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	}
 	return (x);
 }
-// int main ()
-// {
-// 	char a[]="ali";
-// 	char r[]="baba";
-// 	printf("%d\n",&a);
-// 	printf("%d\n",&r);
-// 	printf("%zu\n",ft_strlen(r));
-// 	printf("%zu\n",strlcat(a,r,8));
-	
-// 	printf("%s\n",a);
-// }
