@@ -6,7 +6,7 @@
 /*   By: zbentale <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/22 11:54:32 by zbentale          #+#    #+#             */
-/*   Updated: 2022/10/27 21:43:22 by zbentale         ###   ########.fr       */
+/*   Updated: 2022/10/29 22:07:27 by zbentale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,7 +99,7 @@ char	**ft_split(char const *s, char c)
 		end = ft_end(s + start, c);
 		ptr[r] = ft_substr(s, start, end);
 		if (ptr[r] == NULL)
-			free_ptr(ptr, r);
+			return (free_ptr(ptr, r), NULL);
 		r++;
 	}
 	return (ptr[r] = NULL, ptr);

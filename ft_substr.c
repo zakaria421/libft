@@ -6,7 +6,7 @@
 /*   By: zbentale <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 14:15:38 by zbentale          #+#    #+#             */
-/*   Updated: 2022/10/28 22:00:25 by zbentale         ###   ########.fr       */
+/*   Updated: 2022/10/29 21:35:37 by zbentale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (!s)
 		return (NULL);
 	if (len == 0 || start > ft_strlen(s))
-		start = ft_strlen(s);
-		//return (p = malloc(1), p[i] = '\0', p);
-	if (len >= ft_strlen(s))
+		return (p = malloc(1), p[i] = '\0', p);
+	else if (len >= ft_strlen(s))
 	{
 		p = malloc((ft_strlen(s) - start) + 1);
 		if (!p)

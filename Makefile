@@ -42,10 +42,10 @@ OBJECT = $(SRC:.c=.o)
 
 all : ${NAME}
 
-${NAME} : OBJECT
+${NAME} : ${OBJECT}
 	ar -rc ${NAME} ${OBJECT}
         
-OBJECT : 
+${OBJECT} : 
 	${CC} ${FLAGS}  -c ${SRC}
 
 clean :

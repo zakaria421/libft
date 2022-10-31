@@ -6,7 +6,7 @@
 /*   By: zbentale <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/22 11:55:17 by zbentale          #+#    #+#             */
-/*   Updated: 2022/10/29 16:21:50 by zbentale         ###   ########.fr       */
+/*   Updated: 2022/10/29 21:43:30 by zbentale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	if (!p)
 		return (NULL);
 	while (start <= end)
-	p[i++] = s1[start++];
+		p[i++] = s1[start++];
 	p[i] = '\0';
 	return (p);
 }
